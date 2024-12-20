@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f3f4f6;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.container {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+    font-size: 1.5rem;
+}
+
+.location-display {
+    background-color: #f9fafb;
+    padding: 1rem;
+    border-radius: 0.375rem;
+    margin-bottom: 1rem;
+}
+
+.location-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #4b5563;
+}
+
+#location-info {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+#emergency-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.375rem;
+    background-color: #dc2626;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#emergency-btn:hover:not(:disabled) {
+    background-color: #b91c1c;
+}
+
+#emergency-btn:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+}
+
+#emergency-btn svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.hospitals-section {
+    margin-top: 1.5rem;
+}
+
+.hospital-item {
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    margin-bottom: 0.75rem;
+}
+
+.hospital-item:last-child {
+    margin-bottom: 0;
+}
+
+.hospital-item strong {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: #1f2937;
+}
+
+.hospital-item p {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+}
+
+.hospital-call {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    transition: background-color 0.2s;
+}
+
+.hospital-call:hover {
+    background-color: #1d4ed8;
+}
