@@ -1,7 +1,7 @@
 // Emergency contact list - you should store this securely, possibly in a database
 const emergencyContacts = [
-    { name: 'Emergency Contact 1', phone: '+1234567890' },
-    { name: 'Emergency Contact 2', phone: '+1234567891' }
+    { name: 'Emergency Contact 1', phone: '+918233758907' },
+    { name: 'Emergency Contact 2', phone: '+916350582239' }
 ];
 
 // Get DOM elements
@@ -135,7 +135,7 @@ async function handleEmergency() {
         await sendLocationToContacts();
         
         // Make emergency call
-        window.location.href = 'tel:911';
+        window.location.href = 'tel:108';
     } catch (err) {
         error = err;
         console.error('Emergency action failed:', err);
